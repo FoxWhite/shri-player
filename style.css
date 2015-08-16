@@ -1,0 +1,46 @@
+body{
+	font-family: Verdana, sans-serif;
+}
+
+#dropzone {
+	width: 600px;
+	height: 400px;
+	border: 3px dashed green;
+	border-radius: 30px;
+	position: relative;
+	margin: auto;
+}
+
+.dz-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	color: grey;
+}
+
+
+.upload_btn {
+    width: 187px;
+    height: 41px;
+    overflow: hidden;
+	background: url('img/upload_btn.png');
+	display: inline-block;
+	vertical-align: top;
+}
+.upload_btn input {
+    display: block !important;
+    width: 187px !important;
+    height: 41px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+
+.uploaded_file{
+    width: 187px;
+    height: 41px;	
+    line-height: 41px;
+}
