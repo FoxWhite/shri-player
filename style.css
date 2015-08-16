@@ -10,6 +10,7 @@ body{
 	border-radius: 30px;
 	position: relative;
 	margin: auto;
+	overflow: hidden;
 }
 
 .dz-text{
@@ -21,6 +22,7 @@ body{
 	font-weight: bold;
 	text-align: center;
 	color: grey;
+	z-index: 100;
 }
 
 
@@ -42,7 +44,6 @@ body{
 }
 
 .uploaded_file{
-    width: 187px;
     height: 41px;	
     line-height: 41px;
 }
@@ -70,6 +71,7 @@ body{
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 20px;	
+	z-index: 200;
 }
 
 .disabled{
@@ -88,4 +90,16 @@ body{
 	background-size: cover;
 	width: 107px;
 	height: 106px;
+}
+
+.hidden{
+	display: none;
+}
+
+#player_canvas{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
 }
