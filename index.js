@@ -72,16 +72,16 @@ $('.stopstart').on('click', function(){
 function readFile(file){
     $('.dz-text').html('<div class="loading"></div>');
 
-    var reader = new FileReader()
-    reader.addEventListener('load', function(e) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
         var data = e.target.result
         context.decodeAudioData(data, function(buffer) {
                 audioBuffer = buffer;
                 $('.stopstart').removeClass('disabled');
                 $('.dz-text').html('File loaded!');
             })
-        })
-    reader.readAsArrayBuffer(file)
+    };
+    reader.readAsArrayBuffer(file);
 }
 
 function playSound(buffer) {
